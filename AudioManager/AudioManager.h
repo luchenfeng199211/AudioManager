@@ -38,7 +38,7 @@ typedef void(^VolumeBlock)(double volume);
 @property (nonatomic,assign) id <AudioManagerDelegate> delegate;
 //+ (AudioManager *)sharedManager;
 
-- (BOOL)isConnectingHeadPhoneJack;
+- (BOOL)isConnectingHeadPhoneJack; /*----->监听是否插入耳机*/
 - (void)resetAudioWaver;
 
 //开始接受声音数据
