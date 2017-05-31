@@ -272,7 +272,7 @@ static OSStatus recordingCallback(void *inRefCon,
 //    [fileManager createFileAtPath:fileName contents:_resultData attributes:nil];
     
     //获取当前系统时间戳，作为文件名
-    NSString *userPhone = [[NSUserDefaults standardUserDefaults] objectForKey:@""];
+    NSString *userPhone = [[NSUserDefaults standardUserDefaults] objectForKey:@"13123456789"];
     NSString *doc =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)  lastObject];
     NSString *fileNameSuperPath = [doc stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",userPhone]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
